@@ -1,0 +1,137 @@
+$orange: hsl(25, 97%, 53%);
+$white: hsl(0, 0%, 100%);
+$light-grey: hsl(217, 12%, 63%);
+$medium-grey: hsl(216, 12%, 54%);
+$dark-grey: hsl(213, 19%, 18%);
+$dark-blue: hsl(216, 12%, 8%);
+
+body,
+html {
+    height: 100%;
+}
+
+body {
+    font-size: 15px;
+    font-family: 'Overpass', sans-serif;
+    font-weight: 400;
+    background-color: $dark-blue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card {
+    background-color: $dark-grey;
+    max-width: 405px;
+    border-radius: 20px;
+
+    .card-body {
+        color: $white;
+        padding: 1.5rem;
+        padding-bottom: 2rem;
+
+        @media (min-width: 575.98px) {
+            padding: 2rem;
+        }
+
+        h3 {
+            font-size: 24px;
+        }
+
+        .btn {
+            margin-top: 2rem;
+        }
+
+        p {
+            color: $light-grey;
+        }
+
+        .star {
+            margin-bottom: 2rem;
+        }
+    }
+}
+
+.btn {
+    border-radius: 9999px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    padding-top: 0.675rem;
+    padding-bottom: 0.675rem;
+    font-weight: 700;
+    
+    &.btn-primary {
+        background-color: $orange;
+        border-color: $orange;
+
+        &:hover,
+        &:focus,
+        &:active {
+            background-color: $white;
+            color: hsl(25, 97%, 53%);
+            border-color: $white;
+        }
+    }
+}
+
+.star,
+.number {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 0;
+    min-width: 45px;
+    min-height: 45px;
+    
+    @media (min-width: 575.98px) {
+        min-width: 50px;
+        min-height: 50px;
+    }
+}
+
+.star {
+    border-radius: 9999px;
+    background-color: rgba($white,.05);
+    display: inline-flex;
+}
+
+.number {
+    background-color: rgba($white,.05);
+    border-radius: 9999px;
+    cursor: pointer;
+
+    &.selected {
+        background-color: $light-grey;
+    }
+
+    &:hover,
+    &:focus,
+    &:active {
+        background-color: $orange;
+    }
+}
+
+.card-body-content {
+
+    &.thank-you {
+
+        .selection {
+            color: $orange;
+            display: table;
+            margin-right: auto;
+            margin-left: auto;
+            margin-top: 1.5rem;
+            margin-bottom: 2rem;
+            background-color: rgba($white,.1);
+            border-radius: 9999px;
+            padding-right: 0.75rem;
+            padding-left: 0.75rem;
+            padding-top: 0.5rem;
+            padding-bottom: 0.25rem;
+        }
+    }
+}
+
+.pt25 {
+    padding-top: 2.5rem !important;
+}

@@ -1,0 +1,114 @@
+body,
+html {
+  height: 100%;
+}
+
+body {
+  font-size: 15px;
+  font-family: "Overpass", sans-serif;
+  font-weight: 400;
+  background-color: hsl(216, 12%, 8%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card {
+  background-color: hsl(213, 19%, 18%);
+  max-width: 405px;
+  border-radius: 20px;
+}
+.card .card-body {
+  color: hsl(0, 0%, 100%);
+  padding: 1.5rem;
+  padding-bottom: 2rem;
+}
+@media (min-width: 575.98px) {
+  .card .card-body {
+    padding: 2rem;
+  }
+}
+.card .card-body h3 {
+  font-size: 24px;
+}
+.card .card-body .btn {
+  margin-top: 2rem;
+}
+.card .card-body p {
+  color: hsl(217, 12%, 63%);
+}
+.card .card-body .star {
+  margin-bottom: 2rem;
+}
+
+.btn {
+  border-radius: 9999px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  padding-top: 0.675rem;
+  padding-bottom: 0.675rem;
+  font-weight: 700;
+}
+.btn.btn-primary {
+  background-color: hsl(25, 97%, 53%);
+  border-color: hsl(25, 97%, 53%);
+}
+.btn.btn-primary:hover, .btn.btn-primary:focus, .btn.btn-primary:active {
+  background-color: hsl(0, 0%, 100%);
+  color: hsl(25, 97%, 53%);
+  border-color: hsl(0, 0%, 100%);
+}
+
+.star,
+.number {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 0;
+  min-width: 45px;
+  min-height: 45px;
+}
+@media (min-width: 575.98px) {
+  .star,
+  .number {
+    min-width: 50px;
+    min-height: 50px;
+  }
+}
+
+.star {
+  border-radius: 9999px;
+  background-color: rgba(255, 255, 255, 0.05);
+  display: inline-flex;
+}
+
+.number {
+  background-color: rgba(255, 255, 255, 0.05);
+  border-radius: 9999px;
+  cursor: pointer;
+}
+.number.selected {
+  background-color: hsl(217, 12%, 63%);
+}
+.number:hover, .number:focus, .number:active {
+  background-color: hsl(25, 97%, 53%);
+}
+
+.card-body-content.thank-you .selection {
+  color: hsl(25, 97%, 53%);
+  display: table;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 1.5rem;
+  margin-bottom: 2rem;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 9999px;
+  padding-right: 0.75rem;
+  padding-left: 0.75rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.25rem;
+}
+
+.pt25 {
+  padding-top: 2.5rem !important;
+}/*# sourceMappingURL=styles.css.map */
